@@ -6,9 +6,12 @@ const Hero = () => {
     <div className="hero">
       <h1 className="hero__title">JEFFREY CHAN</h1>
       <h5 className="hero__subtitle">SOFTWARE ENGINEER</h5>
-      <div>
-        <Link href="#projects">Projets</Link>
+      <div className="hero__btn-wrapper">
+        <Link className="hero__btn" href="#projects">
+          Projets
+        </Link>
         <Link
+          className="hero__btn"
           href="/assets/7_31_2023 Resume Jeffrey Chan.pdf"
           target="_blank"
           rel="noopener noreferrer"
