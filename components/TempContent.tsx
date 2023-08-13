@@ -13,13 +13,7 @@ const TempContent = () => {
           <h2 className="section__title">{content.title}</h2>
           <p className="section__description">{content.description}</p>
           <div className="section__img-wrapper">
-            <Image
-              width="100"
-              height="100"
-              className="section__img"
-              src={content.img}
-              alt="MISSING IMAGE"
-            />
+            <Image fill={true} className="section__img" src={content.img} alt="MISSING IMAGE" />
           </div>
         </section>
       ))}

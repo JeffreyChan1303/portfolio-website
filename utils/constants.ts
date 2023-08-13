@@ -8,7 +8,7 @@ const EDUCATION: ContentType = [
   {
     title: 'Education',
     description:
-      'Currenly a student in the University of Massachusetts Lowell. I am pursuing a bachelors of science in computer science. Expected - 2024',
+      'Currenly a student in the University of Massachusetts Lowell. I am pursuing a bachelors of science in computer science. Expected - May 2025',
     img: '/assets/UML-Logo.png',
   },
 ];
@@ -20,7 +20,8 @@ const EXPERIENCES: ContentType = [
   },
   {
     title: 'UML Research Intern',
-    description: 'Worked with Professor Sashank Narain with scheduling research',
+    description:
+      'Worked with Professor Sashank Narain with scheduling researchWorked with Professor Sashank Narain with scheduling researchWorked with Professor Sashank Narain with scheduling research',
     img: '/assets/UML-Logo.png',
   },
 ];
