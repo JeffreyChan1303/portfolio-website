@@ -5,7 +5,6 @@ import Image from 'next/image';
 const TempContent = () => {
   return (
     <div>
-      {}
       {ALL_CONTENT.map((content, index) => (
         <section
           key={index}
@@ -13,7 +12,7 @@ const TempContent = () => {
             index % 2 ? 'section--right' : 'section--left'
           }`}
         >
-          <div className="section__img-wrapper h-60">
+          <div className="section__img-wrapper h-56">
             <Image fill={true} className="object-contain" src={content.img} alt="MISSING IMAGE" />
           </div>
           <h2 className="section__title">{content.title}</h2>

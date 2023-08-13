@@ -15,7 +15,7 @@ const EDUCATION: ContentType = [
 const EXPERIENCES: ContentType = [
   {
     title: 'Athenahealth',
-    description: 'Athenahealth description',
+    description: 'Interned at Athenahealth from June 2023 - August 2023. Used askdljfn',
     img: '/assets/athenahealth-icon.png',
   },
   {

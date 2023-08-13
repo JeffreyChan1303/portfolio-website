@@ -59,8 +59,12 @@ body {
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Poppins", sans-serif; */
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   /* color-scheme: dark; */
+}
+html {
+  /* this important is to override the nextJs default <Link /> scrolling */
+  scroll-behavior: smooth !important;
 }
 
 .text-link {
@@ -94,7 +98,7 @@ body {
 /* header styles */
 
 .header {
-  @apply fixed w-full flex z-10 justify-between h-16 items-center px-6;
+  @apply fixed w-full flex flex-1 z-10 justify-between h-16 items-center px-6;
   background: linear-gradient(180deg, rgb(var(--background-start-rgb)), transparent);
   transition: 500ms ease-in-out;
 }

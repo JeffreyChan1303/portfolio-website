@@ -14,23 +14,24 @@ const Header = () => {
   });
 
   const listenToScroll = () => {
-    console.log(document.documentElement.scrollTop);
     const scrollX = document.documentElement.scrollTop;
     if (scrollX <= 500) {
-      setIsVisible(false);
+      if (isVisible) setIsVisible(false);
     } else {
-      setIsVisible(true);
+      if (!isVisible) setIsVisible(true);
     }
   };
   const throttledListenToScroll = throttle(listenToScroll, 100);
 
   return (
-    <header className={`header ${!isVisible && '-translate-y-40 opacity-0'}`}>
-      <h1 className="font-bold text-2xl">JC</h1>
+    <header className={`header ${!isVisible && '-translate-y-20 opacity-0'}`}>
+      <Link href="#" className="text-link font-bold text-2xl">
+        JC
+      </Link>
       <div className="flex gap-5">
-        <Link className="text-link p-2" href="#projects" target="_blank" rel="noopener noreferrer">
+        <a className="text-link p-2" href="#projects">
           Projects
-        </Link>
+        </a>
 
         <Link
           className="text-link p-2"
