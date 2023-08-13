@@ -77,7 +77,7 @@ body {
 /* header styles */
 
 .header {
-  @apply fixed w-full flex flex-1
+  @apply fixed w-full flex flex-1 z-50 justify-evenly h-16 items-center
 }
 
 /* section styles */
@@ -105,4 +105,19 @@ body {
 
 .section__img {
 
+}
+
+/* footer styles */
+.footer__hr {
+  max-width: 1100px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, .4);
+  margin: 0 auto;
+}
+
+.footer__icons {
+  @apply flex justify-center gap-3
+}
+.footer__icon-link {
+  @apply p-2
 }

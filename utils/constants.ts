@@ -3,6 +3,7 @@ type ContentType = Array<{
   description: string;
   img: string;
 }>;
+
 const EDUCATION: ContentType = [
   {
     title: 'Education',
@@ -39,4 +40,7 @@ const PROJECTS: ContentType = [
   },
 ];
 
-export const ALL_CONTENT = [...EDUCATION, ...EXPERIENCES, ...PROJECTS];
+const ALL_CONTENT: ContentType = [...EDUCATION, ...EXPERIENCES, ...PROJECTS];
+const RESUME_PATH: string = '/assets/7_31_2023 Resume Jeffrey Chan.pdf';
+
+export { ALL_CONTENT, RESUME_PATH };
