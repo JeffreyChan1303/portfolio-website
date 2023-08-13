@@ -16,10 +16,10 @@ const EXPERIENCES: ContentType = [
   {
     title: 'Athenahealth',
     description: 'Athenahealth description',
-    img: '/assets/athenahealth.png',
+    img: '/assets/athenahealth-icon.png',
   },
   {
-    title: 'UML Research Intern',
+    title: 'Research Intern',
     description:
       'Worked with Professor Sashank Narain with scheduling researchWorked with Professor Sashank Narain with scheduling researchWorked with Professor Sashank Narain with scheduling research',
     img: '/assets/UML-Logo.png',

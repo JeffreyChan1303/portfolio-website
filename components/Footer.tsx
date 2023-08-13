@@ -16,11 +16,11 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div className="footer__hr" />
+      <div className="max-w-screen-lg h-px bg-black opacity-40 m-auto" />
 
-      <div className="footer__icons">
+      <div className="flex justify-center gap-3">
         <Link
-          className="footer__icon-link"
+          className="p-2"
           href="https://github.com/JeffreyChan1303"
           target="_blank"
           rel="noopener noreferrer"
@@ -28,7 +28,7 @@ const Footer = () => {
           <i className="fab fa-github"></i>
         </Link>
         <Link
-          className="footer__icon-link"
+          className="p-2"
           href="https://www.linkedin.com/in/jeffrey-chan-1303/"
           target="_blank"
           rel="noopener noreferrer"

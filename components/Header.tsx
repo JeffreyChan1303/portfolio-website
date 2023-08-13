@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { throttle } from '@/utils/utilFunctions';
 
 const Header = () => {
-  const [isVisible, setIsVisible] = useState<boolean>();
+  const [isVisible, setIsVisible] = useState<boolean>(false);
   useEffect(() => {
     window.addEventListener('scroll', throttledListenToScroll);
 
@@ -17,9 +17,9 @@ const Header = () => {
     console.log(document.documentElement.scrollTop);
     const scrollX = document.documentElement.scrollTop;
     if (scrollX <= 500) {
-      setIsVisible(true);
-    } else {
       setIsVisible(false);
+    } else {
+      setIsVisible(true);
     }
   };
   const throttledListenToScroll = throttle(listenToScroll, 100);
