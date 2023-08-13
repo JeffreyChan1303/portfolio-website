@@ -25,3 +25,34 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* general styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+  scroll-behavior: smooth;
+  /* color-scheme: dark; */
+}
+
+/* hero styles */
+
+.hero {
+  @apply flex flex-col gap-5 relative z-0 max-w-[1440px] mx-auto h-screen justify-center items-center;
+}
+
+.hero__title {
+  @apply 2xl:text-8xl sm:text-[64px] text-[50px] font-bold;
+}
+
+.hero__subtitle {
+  @apply text-2xl font-light mt-1;
+}
+
+/* header styles */
+
+.header {
+  @apply fixed w-full flex flex-1
+}
