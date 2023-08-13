@@ -1,21 +1,46 @@
-import React from 'react';
+'use client';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { throttle } from '@/utils/utilFunctions';
 
 const Header = () => {
+  const [isVisible, setIsVisible] = useState<boolean>();
+  useEffect(() => {
+    window.addEventListener('scroll', throttledListenToScroll);
+
+    return () => {
+      window.removeEventListener('scroll', throttledListenToScroll);
+    };
+  });
+
+  const listenToScroll = () => {
+    console.log(document.documentElement.scrollTop);
+    const scrollX = document.documentElement.scrollTop;
+    if (scrollX <= 500) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+  const throttledListenToScroll = throttle(listenToScroll, 100);
+
   return (
-    <header className="header">
-      <div>header item</div>
-      <div>header item</div>
-      <div>header item</div>
-      <div>header item</div>
-      <Link
-        className="p-2"
-        href="/assets/7_31_2023 Resume Jeffrey Chan.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Resume
-      </Link>
+    <header className={`header ${!isVisible && '-translate-y-40 opacity-0'}`}>
+      <h1 className="font-bold text-2xl">JC</h1>
+      <div className="flex gap-5">
+        <Link className="text-link p-2" href="#projects" target="_blank" rel="noopener noreferrer">
+          Projects
+        </Link>
+
+        <Link
+          className="text-link p-2"
+          href="/assets/7_31_2023 Resume Jeffrey Chan.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </Link>
+      </div>
     </header>
   );
 };
