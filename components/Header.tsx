@@ -14,8 +14,8 @@ const Header = () => {
   });
 
   const listenToScroll = () => {
-    const scrollX = document.documentElement.scrollTop;
-    if (scrollX <= 500) {
+    const scrollY = document.documentElement.scrollTop;
+    if (scrollY <= 500) {
       if (isVisible) setIsVisible(false);
     } else {
       if (!isVisible) setIsVisible(true);

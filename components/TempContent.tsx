@@ -1,10 +1,34 @@
-import React from 'react';
+'use client';
+import React, { useState, useEffect } from 'react';
 import { ALL_CONTENT } from '@/utils/constants';
+import { throttle } from '@/utils/utilFunctions';
 import Image from 'next/image';
 
 const TempContent = () => {
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  useEffect(() => {
+    window.addEventListener('scroll', throttledListenToScroll);
+
+    return () => {
+      window.removeEventListener('scroll', throttledListenToScroll);
+    };
+  });
+
+  const listenToScroll = () => {
+    const scrollY = document.documentElement.scrollTop;
+    if (scrollY <= 150) {
+      if (isVisible) setIsVisible(false);
+    } else {
+      if (!isVisible) setIsVisible(true);
+    }
+  };
+  const throttledListenToScroll = throttle(listenToScroll, 100);
+
   return (
-    <div id="experiences">
+    <div
+      id="experiences"
+      className={`experiences ${!isVisible && '-translate-y-30 opacity-0'} -z-10 relative`}
+    >
       {ALL_CONTENT.map((content, index) => (
         <section
           key={index}

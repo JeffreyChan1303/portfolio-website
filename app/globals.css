@@ -105,6 +105,11 @@ html {
 
 /* section styles */
 
+/* this is temperary for the section styles */
+.experiences {
+  transition: 500ms ease-in-out;
+}
+
 .section--left {
   grid-template-columns: 0.35fr 0.65fr;
   grid-template-areas:
