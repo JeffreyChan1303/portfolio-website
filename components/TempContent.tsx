@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const TempContent = () => {
   return (
-    <div>
+    <div id="experiences">
       {ALL_CONTENT.map((content, index) => (
         <section
           key={index}

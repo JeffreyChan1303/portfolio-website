@@ -7,8 +7,8 @@ const Hero = () => {
       <h1 className="md:text-8xl sm:text-6xl text-5xl font-semibold">JEFFREY CHAN</h1>
       <h5 className="text-2xl mt-1 font-medium">SOFTWARE ENGINEER</h5>
       <div className="mt-8">
-        <Link className="hero__btn" href="#projects">
-          Projets
+        <Link className="hero__btn" href="#experiences">
+          Experiences
         </Link>
         <Link
           className="hero__btn"

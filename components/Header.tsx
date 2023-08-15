@@ -29,8 +29,8 @@ const Header = () => {
         JC
       </Link>
       <div className="flex gap-5">
-        <a className="text-link p-2" href="#projects">
-          Projects
+        <a className="text-link p-2" href="#experiences">
+          Experiences
         </a>
 
         <Link
