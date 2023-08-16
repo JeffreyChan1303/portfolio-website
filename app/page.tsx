@@ -8,7 +8,7 @@ import TempContent from '@/components/TempContent';
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main>
       <Header />
       <Hero />
       <TempContent />

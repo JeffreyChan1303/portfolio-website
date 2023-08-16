@@ -44,8 +44,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
-    rgb(var(--background-start-rgb));
+  /* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+    rgb(var(--background-start-rgb)); */
+  background: var(--clr-light);
 
   font-size: var(--fs-body);
 }
@@ -99,7 +100,7 @@ html {
 
 .header {
   @apply fixed w-full flex flex-1 z-10 justify-between h-16 items-center px-6;
-  background: linear-gradient(180deg, rgb(var(--background-start-rgb)), transparent);
+  background: linear-gradient(180deg, var(--clr-light), transparent);
   transition: 500ms ease-in-out;
 }
 
@@ -137,4 +138,5 @@ html {
 .section__img-wrapper {
   position: relative;
   grid-area: img;
+  min-height: 224px;
 }

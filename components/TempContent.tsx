@@ -36,7 +36,7 @@ const TempContent = () => {
             index % 2 ? 'section--right' : 'section--left'
           }`}
         >
-          <div className="section__img-wrapper h-56">
+          <div className="section__img-wrapper h-auto">
             <Image fill={true} className="object-contain" src={content.img} alt="MISSING IMAGE" />
           </div>
           <h2 className="section__title">{content.title}</h2>

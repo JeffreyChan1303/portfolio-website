@@ -7,21 +7,24 @@ type ContentType = Array<{
 const EDUCATION: ContentType = [
   {
     title: 'Education',
-    description:
-      'Currenly a student in the University of Massachusetts Lowell. I am pursuing a bachelors of science in computer science. Expected - May 2025',
+    description: `Currenly a student in the University of Massachusetts Lowell. I am pursuing a bachelors of 
+      science in computer science. Expected - May 2025`,
     img: '/assets/UML-Logo.png',
   },
 ];
 const EXPERIENCES: ContentType = [
   {
     title: 'Athenahealth Intern',
-    description: 'Interned at Athenahealth from June 2023 - August 2023. Used askdljfn',
+    description: `Interned at Athenahealth from June 2023 - August 2023. I used a comprehensive tech stack, 
+      which consists of Typescript, React, and GraphQL Apollo Client for the front-end, while relying on Java 
+      Spring Boot for the back-end, all supported by an Oracle database. I also adapted to Athenahealth's agile
+      workflow making use of Atlassian Jira, Confluence, and Bitbucket for effecient project management, and collaboration.`,
     img: '/assets/athenahealth-icon.png',
   },
   {
     title: 'Research Intern',
-    description:
-      'Worked with Professor Sashank Narain with scheduling researchWorked with Professor Sashank Narain with scheduling researchWorked with Professor Sashank Narain with scheduling research',
+    description: `Worked with Professor Sashank Narain with scheduling researchWorked with Professor Sashank Narain with 
+      scheduling researchWorked with Professor Sashank Narain with scheduling research`,
     img: '/assets/UML-Logo.png',
   },
 ];
@@ -29,14 +32,14 @@ const EXPERIENCES: ContentType = [
 const PROJECTS: ContentType = [
   {
     title: 'Track My Projects',
-    description:
-      'A webapp created using Mongodb, Express, React, and Node.js. Users can use this application to keep track of your personal and professional projects and make use of tickets to work efficiently with thier team.',
+    description: `A webapp created using Mongodb, Express, React, and Node.js. Users can use this application to keep track of 
+      your personal and professional projects and make use of tickets to work efficiently with thier team.`,
     img: '/assets/MERN Stack img.png',
   },
   {
     title: 'IGN Video Player',
-    description:
-      'A fully responsive custom video player made using react. Fetching video data form the IGN api, users can interact with this custom video player and with the video playlist.',
+    description: `A fully responsive custom video player made using react. Fetching video data form the IGN api, users can interact 
+      with this custom video player and with the video playlist.`,
     img: '/assets/ignVideoPlayer.png',
   },
 ];
