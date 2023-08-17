@@ -8,14 +8,14 @@ import TempContent from '@/components/TempContent';
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden z-0">
       <Header />
       <Hero />
       <TempContent />
       {/* <section>picture & about me page??</section>
       <Skills />
-      <Experience />
-      <Projects /> */}
+      <Experience /> */}
+      {/* <Projects /> */}
       <Footer />
     </main>
   );

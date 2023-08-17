@@ -140,3 +140,22 @@ html {
   grid-area: img;
   min-height: 224px;
 }
+
+.temp-content__img {
+  object-fit: contain;
+  animation: expand-and-contract 5s ease-in-out 0s infinite;
+  transition: scale 2.5s ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+@keyframes expand-and-contract {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

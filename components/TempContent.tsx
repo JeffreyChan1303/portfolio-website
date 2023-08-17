@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { ALL_CONTENT } from '@/utils/constants';
 import { throttle } from '@/utils/utilFunctions';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const TempContent = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -27,7 +28,7 @@ const TempContent = () => {
   return (
     <div
       id="experiences"
-      className={`experiences ${!isVisible && '-translate-y-30 opacity-0'} -z-10 relative`}
+      className={`experiences ${!isVisible && '-translate-y-30 opacity-0'} relative`}
     >
       {ALL_CONTENT.map((content, index) => (
         <section
@@ -37,7 +38,14 @@ const TempContent = () => {
           }`}
         >
           <div className="section__img-wrapper h-auto">
-            <Image fill={true} className="object-contain" src={content.img} alt="MISSING IMAGE" />
+            <Link href={content.link} target="_blank" rel="noopener noreferrer">
+              <Image
+                fill={true}
+                className="temp-content__img hover:opacity-80"
+                src={content.img}
+                alt="MISSING IMAGE"
+              />
+            </Link>
           </div>
           <h2 className="section__title">{content.title}</h2>
           <p className="section__description">{content.description}</p>
