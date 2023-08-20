@@ -20,14 +20,14 @@ const EXPERIENCES: ContentType = [
     description: `Interned at Athenahealth from June 2023 - August 2023. I used a comprehensive tech stack, 
       which consists of Typescript, React, and GraphQL Apollo Client for the front-end, while relying on Java 
       Spring Boot for the back-end, all supported by an Oracle database. I also adapted to Athenahealth's agile
-      workflow making use of Atlassian Jira, Confluence, and Bitbucket for effecient project management, and collaboration.`,
+      workflow making use of Atlassian Jira, Confluence, and Bitbucket for efficient project management, and collaboration.`,
     img: '/assets/athenahealth-icon.png',
     link: 'https://www.athenahealth.com/',
   },
   {
     title: 'Research Intern',
-    description: `Worked with Professor Sashank Narain with scheduling researchWorked with Professor Sashank Narain with 
-      scheduling researchWorked with Professor Sashank Narain with scheduling research`,
+    description: `Researched linked scheduling in relation to networks to try to improve throughput and privacy. 
+      Used Python to create algorithms and display data in a efficient and organized manner`,
     img: '/assets/UML-Logo.png',
     link: 'https://submit.petsymposium.org/2024.1/paper/54?cap=hcav54svgRTisvnBsTLSowtQwwTayc',
   },
